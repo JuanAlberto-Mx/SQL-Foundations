@@ -13,6 +13,11 @@ CREATE TABLE staff ( -- Use the more natural collective term where possible
     gender VARCHAR(1) -- The last column specification does not finish with a coma
 );
 
+CREATE TABLE departments (
+    id_department INTEGER,
+    department_name VARCHAR(30)
+);
+
 -- Obtaining the staff table's specification by using the [sp_columns] store procedure.
 EXEC sp_columns staff;
 
