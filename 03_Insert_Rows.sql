@@ -6,3 +6,7 @@
 INSERT INTO staff(control_number, first_name, last_name) VALUES(1, 'Juan Alberto', 'Hernandez Martinez', 37, 'M');
 INSERT INTO staff(control_number, first_name, last_name) VALUES(2, 'Ricardo Alberto', 'Hernandez Solis', 29, 'M');
 INSERT INTO staff(control_number, first_name, last_name) VALUES(3, 'Gricelda', 'Solis Lopez', 31, 'F');
+
+INSERT INTO departments(id_department, department_name) VALUES(1, 'Automation');
+INSERT INTO departments(id_department, department_name) VALUES(2, 'Marketing');
+INSERT INTO departments(id_department, department_name) VALUES(3, 'Human Capital');
