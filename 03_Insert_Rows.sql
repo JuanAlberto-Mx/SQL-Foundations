@@ -2,6 +2,7 @@
 -- INSERT INTO table_name (column1, column2, column...) VALUES(value1, value2, value...);
 -- Columns specification after the table name is optional.
 -- Values section is mandatory and must match each value of the columns specification when exists.
+-- If a column is specified as an IDENTITY property, it must be omitted from the values to insert.
 
 INSERT INTO artists(id_number, first_name, last_name) VALUES(1, 'Christopher', 'Cross', 37, 'M');
 INSERT INTO artists(id_number, first_name, last_name) VALUES(2, 'Paul', 'Stanley', 30, 'M');
@@ -14,16 +15,18 @@ INSERT INTO artists(id_number, first_name, last_name) VALUES(8, 'Brandon', 'Flow
 INSERT INTO artists(id_number, first_name, last_name) VALUES(9, 'Robert', 'Plant', 39, 'M');
 INSERT INTO artists(id_number, first_name, last_name) VALUES(10, 'Ozzy', 'Orbourne', 37, 'M');
 
-INSERT INTO bands(id_band, band_name) VALUES(1, 'Christopher Cross');
-INSERT INTO bands(id_band, band_name) VALUES(2, 'KISS');
-INSERT INTO bands(id_band, band_name) VALUES(3, 'Survivor');
-INSERT INTO bands(id_band, band_name) VALUES(4, 'Journey');
-INSERT INTO bands(id_band, band_name) VALUES(5, 'Queen');
-INSERT INTO bands(id_band, band_name) VALUES(6, 'TOTO');
-INSERT INTO bands(id_band, band_name) VALUES(7, 'Tears For Fears');
-INSERT INTO bands(id_band, band_name) VALUES(8, 'The Killers');
-INSERT INTO bands(id_band, band_name) VALUES(9, 'Led Zepellin');
-INSERT INTO bands(id_band, band_name) VALUES(10, 'Black Sabbath');
+-- Considering a bands table with id_band and band_name columns:
+-- If id_band is IDENTITY then band_name must be the only attribute to insert in the table.
+INSERT INTO bands(band_name) VALUES('Christopher Cross');
+INSERT INTO bands(band_name) VALUES('KISS');
+INSERT INTO bands(band_name) VALUES('Survivor');
+INSERT INTO bands(band_name) VALUES('Journey');
+INSERT INTO bands(band_name) VALUES('Queen');
+INSERT INTO bands(band_name) VALUES('TOTO');
+INSERT INTO bands(band_name) VALUES('Tears For Fears');
+INSERT INTO bands(band_name) VALUES('The Killers');
+INSERT INTO bands(band_name) VALUES('Led Zepellin');
+INSERT INTO bands(band_name) VALUES('Black Sabbath');
 
 INSERT INTO positions(id_position, position_name) VALUES(1, 'Singer');
 INSERT INTO positions(id_position, position_name) VALUES(2, 'Bass');
