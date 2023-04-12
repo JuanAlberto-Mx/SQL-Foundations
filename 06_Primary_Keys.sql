@@ -6,7 +6,7 @@
 -- 4) The primary key statement sets involved columns to NOT NULL values automatically.
 
 CREATE TABLE artists (
-	id_number INTEGER PRIMARY KEY,-- The column is established as the primary key during the table definition.
+	id_artist INTEGER PRIMARY KEY,-- The column is established as the primary key during the table definition.
 	first_name VARCHAR(20),
 	last_name VARCHAR(20),
     age INTEGER,
@@ -25,3 +25,11 @@ CREATE TABLE positions ( -- Creating a table without a primary key
 );
 
 ALTER TABLE positions ADD PRIMARY KEY(id_position); -- Adding a primary key through the using of ALTER TABLE statement.
+
+CREATE TABLE albums (
+    id_album INTEGER PRIMARY KEY IDENTITY,
+    album_name VARCHAR(30),
+    publication_year DATETIME,
+    credits VARCHAR(100),
+    album_cover IMAGE
+);
