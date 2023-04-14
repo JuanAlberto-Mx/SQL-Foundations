@@ -1,28 +1,28 @@
 -- 1) Inserting bands
 
-INSERT INTO bands(band_name) VALUES('Christopher Cross', 'Soft Rock', '1979-12-20');
-INSERT INTO bands(band_name) VALUES('KISS', 'Rock', '1974-02-18');
-INSERT INTO bands(band_name) VALUES('Survivor', 'Rock', '1979-12-21');
-INSERT INTO bands(band_name) VALUES('Journey', 'Rock', '1975-04-01');
-INSERT INTO bands(band_name) VALUES('Queen', 'Rock', '1973-07-13');
-INSERT INTO bands(band_name) VALUES('TOTO', 'Progressive Rock', '1978-10-15');
-INSERT INTO bands(band_name) VALUES('Tears For Fears', 'New Wave', '1983-03-07');
-INSERT INTO bands(band_name) VALUES('The Killers', 'Alternative Rock', '2004-06-07');
-INSERT INTO bands(band_name) VALUES('Led Zepellin', 'Rock', '1969-01-12');
-INSERT INTO bands(band_name) VALUES('Black Sabbath', 'Heavy Metal', '1970-02-13');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Christopher Cross', 'Soft Rock', '1979-20-12');
+INSERT INTO bands(band_name, genre, foundation) VALUES('KISS', 'Rock', '1974-18-02');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Survivor', 'Rock', '1979-21-12');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Journey', 'Rock', '1975-01-04');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Queen', 'Rock', '1973-13-07');
+INSERT INTO bands(band_name, genre, foundation) VALUES('TOTO', 'Progressive Rock', '1978-15-10');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Tears For Fears', 'New Wave', '1983-07-03');
+INSERT INTO bands(band_name, genre, foundation) VALUES('The Killers', 'Alternative Rock', '2004-07-06');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Led Zepellin', 'Rock', '1969-12-01');
+INSERT INTO bands(band_name, genre, foundation) VALUES('Black Sabbath', 'Heavy Metal', '1970-13-02');
 
 -- 2) Inserting positions
 
-INSERT INTO positions(position_name, id_artist) VALUES('Singer');
-INSERT INTO positions(position_name, id_artist) VALUES('Bass');
-INSERT INTO positions(position_name, id_artist) VALUES('Rythm Guitar');
-INSERT INTO positions(position_name, id_artist) VALUES('Lead Guitar');
-INSERT INTO positions(position_name, id_artist) VALUES('Drummer');
+INSERT INTO positions(position_name) VALUES('Singer');
+INSERT INTO positions(position_name) VALUES('Bass');
+INSERT INTO positions(position_name) VALUES('Rythm Guitar');
+INSERT INTO positions(position_name) VALUES('Lead Guitar');
+INSERT INTO positions(position_name) VALUES('Drummer');
+INSERT INTO positions(position_name) VALUES('Keyboards');
 
 -- 3) Inserting artists
 
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Christopher', 'Cross', 71, 'M', 1);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Paul', 'Stanley', 71, 'M', 2);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Gene', 'Simmons', 73, 'M', 2);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Ace', 'Frehley', 71, 'M', 2);
@@ -33,25 +33,21 @@ INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Mark', 
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Bruce', 'Kulick', 69, 'M', 2);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Eric', 'Singer', 64, 'M', 2);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Tommy', 'Thayer', 62, 'M', 2);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Dave', 'Bickler', 70, 'M', 3);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Jim', 'Peterik', 72, 'M', 3);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Frankie', 'Sullivan', 68, 'M', 3);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Jimmy', 'Jamison', 63, 'M', 3);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Gary', 'Smith', 73, 'M', 3);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Dennis', 'Johnson', 63, 'M', 3);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Steve', 'Perry', 74, 'M', 4);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Neal', 'Schon', 69, 'M', 4);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Jonathan', 'Cain', 73, 'M', 4);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Gregg', 'Rolie', 75, 'M', 4);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Deen', 'Castronovo', 58, 'M', 4);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Freddy', 'Mercury', 45, 'M', 5);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Brian', 'May', 75, 'M', 5);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('John', 'Deacon', 71, 'M', 5);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Roger', 'Taylor', 73, 'M', 5);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('David', 'Paich', 68, 'M', 6);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Steve', 'Lukather', 65, 'M', 6);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Bobby', 'Kimball', 76, 'M', 6);
@@ -59,24 +55,84 @@ INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Jeff', 
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Steve', 'Porcaro', 65, 'M', 6);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Mike', 'Porcaro', 60, 'M', 6);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Joseph', 'Williams', 62, 'M', 6);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Roland', 'Orzabal', 61, 'M', 7);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Curt', 'Smith', 61, 'M', 7);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Ian', 'Stanley', 66, 'M', 7);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Manny', 'Elias', 70, 'M', 7);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Brandon', 'Flowers', 41, 'M', 8);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Dave', 'Keuning', 47, 'M', 8);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Ronnie', 'Vanucci Jr.', 47, 'M', 8);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Mark', 'Stoermer', 45, 'M', 8);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Robert', 'Plant', 74, 'M', 9);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Jimmy', 'Page', 79, 'M', 9);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('John', 'Bonham', 32, 'M', 9);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('John', 'Paul Jones', 77, 'M', 9);
-
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Ozzy', 'Orbourne', 74, 'M', 10);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Tony', 'Iommy', 75, 'M', 10);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Geezer', 'Butler', 73, 'M', 10);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Bill', 'Ward', 74, 'M', 10);
 INSERT INTO artists(first_name, last_name, age, gender, id_band) VALUES('Ronnie James', 'Dio', 68, 'M', 10);
+
+-- 4) Inserting lineup
+
+INSERT INTO lineup(id_artist, id_position) VALUES(1, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(2, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(2, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(3, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(4, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(5, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(6, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(7, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(8, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(9, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(10, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(11, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(12, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(13, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(14, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(15, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(16, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(17, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(18, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(19, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(19, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(20, 6);
+INSERT INTO lineup(id_artist, id_position) VALUES(21, 6);
+INSERT INTO lineup(id_artist, id_position) VALUES(22, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(23, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(24, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(24, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(25, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(26, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(27, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(27, 6);
+INSERT INTO lineup(id_artist, id_position) VALUES(28, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(28, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(28, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(29, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(30, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(31, 6);
+INSERT INTO lineup(id_artist, id_position) VALUES(32, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(33, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(34, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(34, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(35, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(35, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(36, 6);
+INSERT INTO lineup(id_artist, id_position) VALUES(37, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(38, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(39, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(39, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(40, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(41, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(42, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(43, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(43, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(44, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(45, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(46, 1);
+INSERT INTO lineup(id_artist, id_position) VALUES(47, 3);
+INSERT INTO lineup(id_artist, id_position) VALUES(47, 4);
+INSERT INTO lineup(id_artist, id_position) VALUES(48, 2);
+INSERT INTO lineup(id_artist, id_position) VALUES(49, 5);
+INSERT INTO lineup(id_artist, id_position) VALUES(50, 1);
