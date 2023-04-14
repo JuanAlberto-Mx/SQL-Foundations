@@ -1,4 +1,4 @@
--- 1) Inserting bands
+-- 1) Inserting bands with datetime format 'YYDDMM'
 
 INSERT INTO bands(band_name, genre, foundation) VALUES('Christopher Cross', 'Soft Rock', '1979-20-12');
 INSERT INTO bands(band_name, genre, foundation) VALUES('KISS', 'Rock', '1974-18-02');
@@ -136,3 +136,16 @@ INSERT INTO lineup(id_artist, id_position) VALUES(47, 4);
 INSERT INTO lineup(id_artist, id_position) VALUES(48, 2);
 INSERT INTO lineup(id_artist, id_position) VALUES(49, 5);
 INSERT INTO lineup(id_artist, id_position) VALUES(50, 1);
+
+-- Inserting albums with datetime format 'YYDDMM'
+
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Christopher Cross', '1979-20-12', '', NULL, 1);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('KISS', '1974-18-02', '', NULL, 2);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Survivor', '1979-21-12', '', NULL, 3);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Journey', '1975-01-04', '', NULL, 4);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Queen', '1973-13-07', '', NULL, 5);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('TOTO', '1978-15-10', '', NULL, 6);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('The Hurting', '1983-07-03', '', NULL, 7);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Hot Fuss', '2004-07-06', '', NULL, 8);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Led Zepellin', '1969-12-01', '', NULL, 9);
+INSERT INTO albums(album_name, publication_year, credits, album_cover, id_band) VALUES('Black Sabbath', '1970-13-02', '', NULL, 10);
